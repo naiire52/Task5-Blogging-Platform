@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Blogging Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1> Blogging Platform</h1>
+
+<input type="text" id="searchInput" placeholder="Search posts by title or content..." aria-label="Search posts" />
+
+<form id="postForm" aria-label="Create a new blog post">
+  <label for="titleInput">Title</label>
+  <input type="text" id="titleInput" required placeholder="Enter post title" />
+
+  <label for="contentInput">Content</label>
+  <textarea id="contentInput" rows="6" required placeholder="Write your post content here"></textarea>
+
+  <button type="submit">Publish Post</button>
+</form>
+
+<div class="posts" id="posts" aria-live="polite" aria-atomic="true"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
